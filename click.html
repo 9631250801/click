@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+	
+     $("#click").click(function()
+				{ 
+				
+				var str=$("#click").attr('value');
+				 if(str=="Hide")
+				 {
+				   $("#click").attr('value','Display');
+				   $("#img").hide();
+				 }
+				 else
+				 {
+				 $("#click").attr('value','Hide');
+				 $("#img").show();
+				 }
+              });
+   
+  });
+</script> 
+</head>
+<body>
+   <div style="height:300px;width400px;"> <img src="man.jpg" height="300px" width="400px" id="img"></div>
+   <input type="button" id="click" value="Hide" >
+
+</body>
+</html>
